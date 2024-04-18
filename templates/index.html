@@ -1,0 +1,37 @@
+<!DOCTYPE html> {% extends "base.html" %} {% block content %}
+
+
+<head>
+    <title>Prediction</title>
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color:black;font-size:40px;"><b>Information : </b></h1>
+    <p style="color:black;font-size:30px;">Since the past days and in the present too, farmers usually detect the crop diseases with their naked eye which makes them take tough decisions on which fertilizers to use. It requires detailed knowledge the types of diseases and lot of experience
+        needed to make sure the actual disease detection. Some of the diseases look almost similar to farmers often leaves them confused. Look at the below image for more understanding.</p>
+    <h1 img src="https://miro.medium.com/max/1422/1*nCn6lY6f9OMdbcKbwRmrpg.png" width="700" height="250"></h1>
+    <h2 style="color:red;font-size:35px;"><b><center>~ Choose Image ~</center></b></h2>
+    <form action="/predict" method="POST" enctype="multipart/form-data">
+        <center>
+            <input type="file" name="file">
+        </center>
+        <br><br>
+        <center> <button type="submit" class="btn btn-primary btn-lg " id="btn-predict">Predict</button>
+        </center>
+
+    </form>
+
+
+
+
+
+
+</body>
+{% endblock %}

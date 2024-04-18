@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Output</title>
+  <h1 color="red">OUTPUT</h1>
+  <style>
+    h2 {
+      text-align: left;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      font-color: green;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h2 span style="color:blue">
+
+    <img src="{{url_for('static',filename='pic1.jpg')}}" alt="ranjith" align="right" height="200" width="200">
+    <img src="{{url_for('static',filename='pic2.jpg')}}" alt="ranjith" align="right" height="200" width="200">
+    <img src="{{url_for('static',filename='def.jpg')}}" alt="ranjith" align="right" height="200" width="200">
+
+
+    <p style="color:red">{{ output1 }}</p><br>
+    <p style="color:green"> {{ output2 }}</p><br>
+    <p style="color:magenta">{{output3}}</p><br>
+    <p style="color:blue">{{output4}}</p>
+
+
+  </h2>
+
+
+
+</body>
+
+</html>
